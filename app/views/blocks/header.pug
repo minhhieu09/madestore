@@ -1,0 +1,29 @@
+header.header
+    .container
+        .header-top
+            a.header-logo(href="index.html") Made Store
+            i.fa.fa-bars.header-toggle
+            ul.header-menu
+                +menuLink("Home")
+                +menuLink("Delivery")
+                +menuLink("Blog")
+                +menuLink("About")
+                +menuLink("Contact")
+                li.header-menu-item 
+                    a.header-menu-icon(href="#") 
+                        i.fa.fa-shopping-cart
+                li.header-menu-item 
+                    a.header-menu-icon(href="#") 
+                        i.fa.fa-search
+                li.header-menu-item 
+                    a.header-menu-icon(href="#") 
+                        i.fa.fa-user
+        .header-content
+            h2.header-content-caption Good Morning !
+            h1.header-content-main Welcome to MadeStore
+            a.header-content-more(href="#") Learn more
+        .header-bottom          
+            +headerBottomItem("01", "Intro")
+            +headerBottomItem("02", "Work")
+            +headerBottomItem("03", "About")
+            +headerBottomItem("04", "Contacts")
